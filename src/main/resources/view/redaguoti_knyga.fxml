@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lt.kitm.controller.RedaguotiKnygaController">
+   <children>
+      <TextField fx:id="isbn" promptText="ISBN" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="100.0" />
+      <TextField fx:id="pavadinimas" promptText="Pavadinimas" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="130.0" />
+      <TextArea fx:id="santrauka" prefHeight="200.0" prefWidth="200.0" promptText="Santrauka" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="160.0" />
+      <Label text="Puslapiu skaičius" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="490.0" AnchorPane.topAnchor="375.0" />
+       <Spinner fx:id="puslapiu_skaicius" editable="true" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="325.0" AnchorPane.topAnchor="370.0">
+           <valueFactory>
+               <SpinnerValueFactory.IntegerSpinnerValueFactory initialValue="1" max="99999" min="1" />
+           </valueFactory>
+       </Spinner>
+      <ComboBox fx:id="kategorija" prefWidth="150.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="400.0" />
+      <Button mnemonicParsing="false" onAction="#onActionAtsaukti" text="Atšaukti" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+      <Label fx:id="zinute" alignment="CENTER" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+      <Button mnemonicParsing="false" onAction="#onActionAtnaujinti" text="Atnaujinti" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>

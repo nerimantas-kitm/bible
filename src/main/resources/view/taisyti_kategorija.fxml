@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lt.kitm.controller.TaisytiKategorijaController">
+   <children>
+      <Label fx:id="kategorijos_id" alignment="CENTER" text="ID" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0" />
+      <TextField fx:id="kategorijos_pavadinimas" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="75.0" />
+      <Label fx:id="zinute" alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="240.0" />
+      <Button mnemonicParsing="false" onAction="#onActionAtsaukti" text="Atšaukti" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="270.0" />
+      <Button mnemonicParsing="false" onAction="#onActionAtnaujinti" text="Atnaujinti" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="270.0" />
+   </children>
+</AnchorPane>

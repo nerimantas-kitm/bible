@@ -1,0 +1,38 @@
+CREATE DATABASE biblioteka_fx;
+CREATE USER 'biblioteka_fx'@localhost IDENTIFIED BY 'saugus_slaptazodis';
+GRANT ALL PRIVILEGES ON biblioteka_fx.* TO 'biblioteka_fx'@localhost;
+CREATE TABLE IF NOT EXISTS kategorijos (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    pavadinimas VARCHAR(255) NOT NUll UNIQUE
+);
+CREATE TABLE IF NOT EXISTS knygos (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    isbn VARCHAR(20) UNIQUE NOT NULL,
+    pavadinimas VARCHAR(255) NOT NULL,
+    santrauka VARCHAR(500),
+    nuotrauka VARCHAR(500),
+    puslapiu_skaicius SMALLINT NOT NULL,
+    kategorijos_id INTEGER,
+    FOREIGN KEY (kategorijos_id) REFERENCES kategorijos(id)
+);
+CREATE TABLE IF NOT EXISTS vartotojai (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(255) NOT NULL,
+    vardas VARCHAR(255) NOT NULL,
+    pavarde VARCHAR(255) NOT NULL,
+    slaptazodis VARCHAR(255) NOT NULL,
+    tipas VARCHAR(15) NOT NULL
+);
+CREATE TABLE IF NOT EXISTS rezervacijos (
+    vartotojo_id INTEGER,
+    knygos_id INTEGER,
+    FOREIGN KEY (vartotojo_id) REFERENCES vartotojai(id),
+    FOREIGN KEY (knygos_id) REFERENCES knygos(id)
+);
+CREATE TABLE IF NOT EXISTS pamegtos_knygos (
+    vartotojo_id INTEGER,
+    knygos_id INTEGER,
+    FOREIGN KEY (vartotojo_id) REFERENCES vartotojai(id),
+    FOREIGN KEY (knygos_id) REFERENCES knygos(id)
+);
+DROP TABLES pamegtos_knygos, rezervacijos, knygos, kategorijos;

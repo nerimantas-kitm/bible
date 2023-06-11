@@ -1,0 +1,11 @@
+.button_group_element_right {
+    -fx-background-radius: 0px 5px 5px 0px;
+}
+
+.button_group_element_middle {
+    -fx-background-radius: 0px 0px 0px 0px;
+}
+
+.button_group_element_left {
+    -fx-background-radius: 5px 0px 0px 5px;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lt.kitm.controller.PrisijungimoController">
+   <children>
+      <TextField fx:id="email" promptText="El. paštas" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="150.0" />
+      <PasswordField fx:id="slaptazodis" promptText="Slatažodis" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="200.0" />
+      <Button mnemonicParsing="false" onAction="#onActionRegistruotis" text="Registruotis" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="250.0" />
+      <Button mnemonicParsing="false" onAction="#onActionPrisijungti" text="Prisijungti" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="250.0" />
+      <Label fx:id="zinute" alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="380.0" />
+   </children>
+</AnchorPane>

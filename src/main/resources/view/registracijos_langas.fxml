@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lt.kitm.controller.RegistracijosController">
+   <children>
+      <Label alignment="CENTER" text="REGISTRACIJA" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0" />
+      <TextField fx:id="email" promptText="El. paštas" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="100.0" />
+      <TextField fx:id="vardas" promptText="Vardas" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="130.0" />
+      <TextField fx:id="pavarde" promptText="Pavardė" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="160.0" />
+      <PasswordField fx:id="slaptazodis1" promptText="Slaptažodis" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="190.0" />
+      <PasswordField fx:id="slaptazodis2" layoutX="160.0" layoutY="200.0" promptText="Pakrtoti slaptažodį" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="220.0" />
+      <Button mnemonicParsing="false" onAction="#onActionAtsaukti" text="Atšaukti" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="270.0" />
+      <Button mnemonicParsing="false" onAction="#onActionRegistruotis" text="Registruotis" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="270.0" />
+      <Label fx:id="zinute" alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="380.0" />
+   </children>
+</AnchorPane>
